@@ -1,0 +1,33 @@
+.home-loan-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .how-it-works {
+    margin-bottom: 30px;
+  }
+  
+  .steps div {
+    margin: 10px 0;
+  }
+  
+  .loan-partners table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .loan-partners th, .loan-partners td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .pre-approved-loan button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
