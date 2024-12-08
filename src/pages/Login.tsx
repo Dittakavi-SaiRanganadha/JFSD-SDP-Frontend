@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Header/Navbar';
 import axios from 'axios';
+import config from '../config';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -14,7 +15,7 @@ export default function Login() {
 
     try {
       // Send POST request to the backend for login
-      const response = await axios.post('http://localhost:2024/customer/login', {
+      const response = await axios.post(`${config.url}/customer/login`, {
         email,
         password,
       });

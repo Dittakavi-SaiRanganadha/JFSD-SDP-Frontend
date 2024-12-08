@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; // Importing useNavigate from React Router
 import './Registration.css';
+import config from '../config';
 
 export default function Registration() {
   const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ export default function Registration() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:2024/customer/register', formData);
+      const response = await axios.post(`${config.url}/customer/register`, formData);
       if (response.status === 200) {
         setStatusMessage('Registration successful!');
         console.log('Server Response:', response.data);
