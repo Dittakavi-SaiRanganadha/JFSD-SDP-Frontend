@@ -1,5 +1,5 @@
 // HomeLoan.tsx
-import React from 'react';
+// import React from 'react';
 import './HomeLoan.css';
 
 const HomeLoan = () => {

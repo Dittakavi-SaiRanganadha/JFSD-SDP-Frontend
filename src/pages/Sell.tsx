@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Navbar from '../components/Header/Navbar';
-import { useAuth } from '../context/AuthContext';
+// import { useAuth } from '../context/AuthContext';
 
 export default function Sell() {
-  const { user } = useAuth();
+  // const { user } = useAuth();
   const [formData, setFormData] = useState({
     title: '',
     price: '',

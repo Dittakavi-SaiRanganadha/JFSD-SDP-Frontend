@@ -8,7 +8,7 @@ import { useAuth } from '../../context/AuthContext';
 
 export default function UserNavebar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
+  // const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
   const { user, logout } = useAuth();
   const navigate = useNavigate();
 
